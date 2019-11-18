@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kalamazoo College Course Evaluation </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="questions.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        background-color: orange;
+    }
+</style>
+
+<body>
+
+    <!-- Navigation Bar and header -->
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <a class="navbar-brand" href="#">
+            <img src="img/KCollegeLogo.png">
+        </a>
+        <span class="navbar-text">Kalamazoo College Course Evaluation</span>
+    </nav>
+
+    </br>
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+
+
+            </div>
+            <div class="col-sm-6">
+
+                <div class="text-center">
+                    <h2>Part one: What I Learned</h3></br>
+                </div>
+                <!--<form action="api/finishedResponse" method="POST">-->
+
+                    <div class="text-center">
+                        <h3>What year at K are you?</h3></br>
+                    </div>
+                    <div>
+                        <div class="radio">
+                            <label><input type="radio" name="year" id="Freshman" value="5"> Freshman </label></br>
+                            <label><input type="radio" name="year" id="Sophmore" value="4"> Sophmore</label></br>
+                            <label><input type="radio" name="year" id="Junior" value="3"> Junior</label></br>
+                            <label><input type="radio" name="year" id="Senior" value="2"> Senior</label></br>
+                            <label><input type="radio" name="year" id="Other" value="1"> Other </label></br>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <h3>Is this course a...</h3></br>
+                    </div>
+                    <div>
+                        <div class="radio">
+                            <label><input type="radio" name="is" id="Elective" value="5"> Elective </label></br>
+                            <label><input type="radio" name="is" id="Requirement" value="4"> Requirement</label></br>
+                        </div>
+                    </div>
+                    
+
+
+
+                <div class="text-center">
+                    <h3>In this course, I gained a deeper understanding of the subject</h3></br>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" id="saq1" value="5"> Strongly  Agree</label>
+                </div>
+
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" id="aq1" value="4"> Agree</label>
+                </div>
+
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" id="nq1" value="3"> Neutral</label>
+                </div>
+
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" id="dq1" value="2"> Disagree</label>
+                </div>
+
+                <div class="radio">
+                    <label><input type="radio" name="optradio1" id="sdq1" value="1"> Strongly  Disagree</label>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h3>In this course, I gained the ability to think critically about course subject matter</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio2" id="saq2" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio2" id="aq2" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio2" id="nq2" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio2" id="dq2" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio2" id="sdq2" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>In this course, I gained a new or increased interest in this subject</h3></br>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio3" id="saq3" value="5"> Strongly  Agree</label></br>
+                    <label><input type="radio" name="optradio3" id="aq3" value="4"> Agree</label></br>
+                    <label><input type="radio" name="optradio3" id="nq3" value="3">  Neutral</label></br>
+                    <label><input type="radio" name="optradio3" id="dq3" value="2"> Disagree</label></br>
+                    <label><input type="radio" name="optradio3" id="sdq3" value="1"> Strongly  Disagree</label>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h3>In this course, I improved my ability to consider varying perspectives or approaches</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio4" id="saq4" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio4" id="aq4" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio4" id="nq4" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio4" id="dq4" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio4" id="sdq4" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>In this course, I improved my ability to apply skills required for the course </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio5" id="saq5" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio5" id="aq5" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio5" id="nq5" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio5" id="dq5" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio5" id="sdq5" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h3>In this course, I improved my ability to think independently and creatively</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio6" id="saq6" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio6" id="aq6" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio6" id="nq6" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio6" id="dq6" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio6" id="sdq6" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h3>In this course, I improved my ability to think collaboratively</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio7" id="saq7" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio7" id="aq7" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio7" id="nq7" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio7" id="dq7" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio7" id="sdq7" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h3>In this course, I improved my ability to express my ideas effectively </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio8" id="saq8" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio8" id="aq8" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio8" id="nq8" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio8" id="dq8" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio8" id="sdq8" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="form-group">
+                    <label for="comment">
+                        <h3>Please make comments or suggestions: </h3>
+                    </label>
+                    <textarea class="form-control" rows="5" id="comment1"></textarea>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h2>Part 2: Learning Environment</h3></br>
+                </div>
+
+                <div class="text-center">
+                    <h3>Course goals and requirements were clearly explained</h3></br>
+                </div>
+
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio9" id="saq9" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio9" id="aq9" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio9" id="nq9" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio9" id="dq9" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio9" id="sdq9" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+
+                <div class="text-center">
+                    <h3>The course was appropriately challenging </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio10" id="saq10" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio10" id="aq10" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio10" id="nq10" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio10" id="dq10" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio10" id="sdq10" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+
+                <div class="text-center">
+                    <h3>Course materials (texts, readings, equipment, visuals, etc.) were effective </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio11" id="saq11" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio11" id="aq11" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio11" id="nq11" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio11" id="dq11" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio11" id="sdq11" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>Class time was organized and used effectively</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio12" id="saq12" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio12" id="aq12" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio12" id="nq12" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio12" id="dq12" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio12" id="sdq12" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>Projects and assignments in this course contributed significantly to my learning</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio13" id="saq13" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio13" id="aq13" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio13" id="nq13" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio13" id="dq13" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio13" id="sdq13" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>Students’ ideas and contributions were encouraged </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio14" id="saq14" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio14" id="aq14" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio14" id="nq14" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio14" id="dq14" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio14" id="sdq14" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>My work was evaluated fairly </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio15" id="saq15" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio15" id="aq15" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio15" id="nq15" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio15" id="dq15" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio15" id="sdq15" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>The instructor gave me timely feedback on my work </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio16" id="saq16" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio16" id="aq16" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio16" id="nq16" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio16" id="dq16" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio16" id="sdq16" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>The instructor gave me helpful suggestions for improvement</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio17" id="saq17" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio17" id="aq17" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio17" id="nq17" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio17" id="dq17" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio17" id="sdq17" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>The instructor was available during office hours and for appointments </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio18" id="saq18" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio18" id="aq18" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio18" id="nq18" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio18" id="dq18" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio18" id="sdq18" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>The teaching techniques in this course were effective in helping me learn
+                        (for example, discussions, demonstrations, lectures, group work, audiovisuals, etc.)</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio19" id="saq19" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio19" id="aq19" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio19" id="nq19" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio19" id="dq19" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio19" id="sdq19" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="form-group">
+                    <label for="comment">
+                        <h3>Please make comments or suggestions: </h3>
+                    </label>
+                    <textarea class="form-control" rows="5" id="comment2"></textarea>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h2>Part 3: Service-Learning and Labs (if applicable) </h2></br>
+                </div>
+
+                <div class="text-center">
+                    <h3>Service-Learning contributed significantly to my learning </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio20" id="na20" value="0"> N/A</label></br>
+                        <label><input type="radio" name="optradio20" id="saq20" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio20" id="aq20" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio20" id="nq20" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio20" id="dq20" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio20" id="sdq20" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+
+                <div class="text-center">
+                    <h3>Labs contributed significantly to my learning </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio21" id="na21" value="0"> N/A</label></br>
+                        <label><input type="radio" name="optradio21" id="saq21" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio21" id="aq21" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio21" id="nq21" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio21" id="dq21" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio21" id="sdq21" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+
+                <div class="form-group">
+                    <label for="comment">
+                        <h3>Please make comments or suggestions: </h3>
+                    </label>
+                    <textarea class="form-control" rows="5" id="comment3"></textarea>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h2>Part 4: Overall Evaluation</h2></br>
+                </div>
+
+                <div class="text-center">
+                    <h3>Overall, I put considerable effort into this course</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio22" id="saq22" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio22" id="aq22" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio22" id="nq22" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio22" id="dq22" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio22" id="sdq22" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>Overall, this course was valuable to my academic and/or personal growth </h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio23" id="saq23" value="5"> Strongly  Agree</label></br>
+                        <label><input type="radio" name="optradio23" id="aq23" value="4"> Agree</label></br>
+                        <label><input type="radio" name="optradio23" id="nq23" value="3"> Neutral</label></br>
+                        <label><input type="radio" name="optradio23" id="dq23" value="2"> Disagree</label></br>
+                        <label><input type="radio" name="optradio23" id="sdq23" value="1"> Strongly  Disagree</label></br>
+                    </div>
+                </div>
+
+
+                </br></br>
+
+
+                <div class="form-group">
+                    <label for="comment">
+                        <h3>Please make comments or suggestions: </h3>
+                    </label>
+                    <textarea class="form-control" rows="5" id="comment4"></textarea>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>Overall, this instructor’s teaching was</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio24" id="saq24" value="5"> Excellemt</label></br>
+                        <label><input type="radio" name="optradio24" id="aq24" value="4"> Very Good</label></br>
+                        <label><input type="radio" name="optradio24" id="nq24" value="3"> Good</label></br>
+                        <label><input type="radio" name="optradio24" id="dq24" value="2"> Fair</label></br>
+                        <label><input type="radio" name="optradio24" id="sdq24" value="1"> Poor</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+                <div class="text-center">
+                    <h3>Overall, this course was</h3></br>
+                </div>
+                <div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio25" id="saq25" value="5"> Excellemt</label></br>
+                        <label><input type="radio" name="optradio25" id="aq25" value="4"> Very Good</label></br>
+                        <label><input type="radio" name="optradio25" id="nq25" value="3"> Good</label></br>
+                        <label><input type="radio" name="optradio25" id="dq25" value="2"> Fair</label></br>
+                        <label><input type="radio" name="optradio25" id="sdq25" value="1"> Poor</label></br>
+                    </div>
+                </div>
+
+                </br></br>
+
+
+                <div class="form-group">
+                    <label for="comment">
+                        <h3>Please make comments or suggestions: </h3>
+                    </label>
+                    <textarea class="form-control" rows="5" id="comment5"></textarea>
+
+                </div>
+
+                </br></br>
+
+
+                <script>
+                        function courseType() {
+                        if (document.getElementById('Elective').checked) {
+                            type = "Elective";
+                        }
+                        else if (document.getElementById('Requirement').checked) {
+                            type = "Requirement";
+                        }
+                        else {
+                            type = " ";
+                        }
+                        return type;
+                    }
+                    
+                    function yearAtK() {
+                        if (document.getElementById('Freshman').checked) {
+                            year = "Freshman";
+                        }
+                        else if (document.getElementById('Sophmore').checked) {
+                            year = "Sophmore";
+                        }
+                        else if (document.getElementById('Junior').checked) {
+                            year = "Junior";
+                        }
+                        else if (document.getElementById('Senior').checked) {
+                            year = "Senior";
+                        }
+                        else if (document.getElementById('Other').checked) {
+                            year = "Other";
+                        }
+                        else {
+                            year = " ";
+                        }
+                        return year;
+                    }
+
+                    function oneQuestion() {
+                        if (document.getElementById('saq1').checked) {
+                            a1 = document.getElementById('saq1').value;
+                        }
+                        else if (document.getElementById('aq1').checked) {
+                            a1 = document.getElementById('aq1').value;
+                        }
+                        else if (document.getElementById('nq1').checked) {
+                            a1 = document.getElementById('nq1').value;
+                        }
+                        else if (document.getElementById('dq1').checked) {
+                            a1 = document.getElementById('dq1').value;
+                        }
+                        else if (document.getElementById('sdq1').checked) {
+                            a1 = document.getElementById('sdq1').value;
+                        }
+                        else {
+                            a1 = " ";
+                        }
+                        return a1;
+                    }
+
+                    function twoQuestion() {
+                        if (document.getElementById('saq2').checked) {
+                            a2 = document.getElementById('saq2').value;
+                        }
+                        else if (document.getElementById('aq2').checked) {
+                            a2 = document.getElementById('aq2').value;
+                        }
+                        else if (document.getElementById('nq2').checked) {
+                            a2 = document.getElementById('nq2').value;
+                        }
+                        else if (document.getElementById('dq2').checked) {
+                            a2 = document.getElementById('dq2').value;
+                        }
+                        else if (document.getElementById('sdq2').checked) {
+                            a2 = document.getElementById('sdq2').value;
+                        }
+                        else {
+                            a2 = " ";
+                        }
+                        return a2;
+                    }
+
+                    function threeQuestion() {
+                        if (document.getElementById('saq3').checked) {
+                            a3 = document.getElementById('saq3').value;
+                        }
+                        else if (document.getElementById('aq3').checked) {
+                            a3 = document.getElementById('aq3').value;
+                        }
+                        else if (document.getElementById('nq3').checked) {
+                            a3 = document.getElementById('nq3').value;
+                        }
+                        else if (document.getElementById('dq3').checked) {
+                            a3 = document.getElementById('dq3').value;
+                        }
+                        else if (document.getElementById('sdq3').checked) {
+                            a3 = document.getElementById('sdq3').value;
+                        }
+                        else {
+                            a3 = " ";
+                        }
+                        return a3;
+                    }
+
+                    function fourQuestion() {
+                        if (document.getElementById('saq4').checked) {
+                            a4 = document.getElementById('saq4').value;
+                        }
+                        else if (document.getElementById('aq4').checked) {
+                            a4 = document.getElementById('aq4').value;
+                        }
+                        else if (document.getElementById('nq4').checked) {
+                            a4 = document.getElementById('nq4').value;
+                        }
+                        else if (document.getElementById('dq4').checked) {
+                            a4 = document.getElementById('dq4').value;
+                        }
+                        else if (document.getElementById('sdq4').checked) {
+                            a4 = document.getElementById('sdq4').value;
+                        }
+                        else {
+                            a4 = " ";
+                        }
+                        return a4;
+                    }
+
+                    function fiveQuestion() {
+                        if (document.getElementById('saq5').checked) {
+                            a5 = document.getElementById('saq5').value;
+                        }
+                        else if (document.getElementById('aq5').checked) {
+                            a5 = document.getElementById('aq5').value;
+                        }
+                        else if (document.getElementById('nq5').checked) {
+                            a5 = document.getElementById('nq5').value;
+                        }
+                        else if (document.getElementById('dq5').checked) {
+                            a5 = document.getElementById('dq5').value;
+                        }
+                        else if (document.getElementById('sdq5').checked) {
+                            a5 = document.getElementById('sdq5').value;
+                        }
+                        else {
+                            a5 = " ";
+                        }
+                        return a5;
+                    }
+
+                    function sixQuestion() {
+                        if (document.getElementById('saq6').checked) {
+                            a6 = document.getElementById('saq6').value;
+                        }
+                        else if (document.getElementById('aq6').checked) {
+                            a6 = document.getElementById('aq6').value;
+                        }
+                        else if (document.getElementById('nq6').checked) {
+                            a6 = document.getElementById('nq6').value;
+                        }
+                        else if (document.getElementById('dq6').checked) {
+                            a6 = document.getElementById('dq6').value;
+                        }
+                        else if (document.getElementById('sdq6').checked) {
+                            a6 = document.getElementById('sdq6').value;
+                        }
+                        else {
+                            a6 = " ";
+                        }
+                        return a6;
+                    }
+
+                    function sevenQuestion() {
+                        if (document.getElementById('saq7').checked) {
+                            a7 = document.getElementById('saq7').value;
+                        }
+                        else if (document.getElementById('aq7').checked) {
+                            a7 = document.getElementById('aq7').value;
+                        }
+                        else if (document.getElementById('nq7').checked) {
+                            a7 = document.getElementById('nq7').value;
+                        }
+                        else if (document.getElementById('dq7').checked) {
+                            a7 = document.getElementById('dq7').value;
+                        }
+                        else if (document.getElementById('sdq7').checked) {
+                            a7 = document.getElementById('sdq7').value;
+                        }
+                        else {
+                            a7 = " ";
+                        }
+                        return a7;
+                    }
+
+                    function eightQuestion() {
+                        if (document.getElementById('saq8').checked) {
+                            a8 = document.getElementById('saq8').value;
+                        }
+                        else if (document.getElementById('aq8').checked) {
+                            a8 = document.getElementById('aq8').value;
+                        }
+                        else if (document.getElementById('nq8').checked) {
+                            a8 = document.getElementById('nq8').value;
+                        }
+                        else if (document.getElementById('dq8').checked) {
+                            a8 = document.getElementById('dq8').value;
+                        }
+                        else if (document.getElementById('sdq8').checked) {
+                            a8 = document.getElementById('sdq8').value;
+                        }
+                        else {
+                            a8 = " ";
+                        }
+                        return a8;
+                    }
+
+                    function nineQuestion() {
+                        if (document.getElementById('saq9').checked) {
+                            a9 = document.getElementById('saq9').value;
+                        }
+                        else if (document.getElementById('aq9').checked) {
+                            a9 = document.getElementById('aq9').value;
+                        }
+                        else if (document.getElementById('nq9').checked) {
+                            a9 = document.getElementById('nq9').value;
+                        }
+                        else if (document.getElementById('dq9').checked) {
+                            a9 = document.getElementById('dq9').value;
+                        }
+                        else if (document.getElementById('sdq9').checked) {
+                            a9 = document.getElementById('sdq9').value;
+                        }
+                        else {
+                            a9 = " ";
+                        }
+                        return a9;
+                    }
+
+                    function tenQuestion() {
+                        if (document.getElementById('saq10').checked) {
+                            a10 = document.getElementById('saq10').value;
+                        }
+                        else if (document.getElementById('aq10').checked) {
+                            a10 = document.getElementById('aq10').value;
+                        }
+                        else if (document.getElementById('nq10').checked) {
+                            a10 = document.getElementById('nq10').value;
+                        }
+                        else if (document.getElementById('dq10').checked) {
+                            a10 = document.getElementById('dq10').value;
+                        }
+                        else if (document.getElementById('sdq10').checked) {
+                            a10 = document.getElementById('sdq10').value;
+                        }
+                        else {
+                            a10 = " ";
+                        }
+                        return a10;
+                    }
+
+                    function elevenQuestion() {
+                        if (document.getElementById('saq11').checked) {
+                            a11 = document.getElementById('saq11').value;
+                        }
+                        else if (document.getElementById('aq11').checked) {
+                            a11 = document.getElementById('aq11').value;
+                        }
+                        else if (document.getElementById('nq11').checked) {
+                            a11 = document.getElementById('nq11').value;
+                        }
+                        else if (document.getElementById('dq11').checked) {
+                            a11 = document.getElementById('dq11').value;
+                        }
+                        else if (document.getElementById('sdq11').checked) {
+                            a11 = document.getElementById('sdq11').value;
+                        }
+                        else {
+                            a11 = " ";
+                        }
+                        return a11;
+                    }
+
+                    function twelveQuestion() {
+                        if (document.getElementById('saq12').checked) {
+                            a12 = document.getElementById('saq12').value;
+                        }
+                        else if (document.getElementById('aq12').checked) {
+                            a12 = document.getElementById('aq12').value;
+                        }
+                        else if (document.getElementById('nq12').checked) {
+                            a12 = document.getElementById('nq12').value;
+                        }
+                        else if (document.getElementById('dq12').checked) {
+                            a12 = document.getElementById('dq12').value;
+                        }
+                        else if (document.getElementById('sdq12').checked) {
+                            a12 = document.getElementById('sdq12').value;
+                        }
+                        else {
+                            a12 = " ";
+                        }
+                        return a12;
+                    }
+
+                    function thirteenQuestion() {
+                        if (document.getElementById('saq13').checked) {
+                            a13 = document.getElementById('saq13').value;
+                        }
+                        else if (document.getElementById('aq13').checked) {
+                            a13 = document.getElementById('aq13').value;
+                        }
+                        else if (document.getElementById('nq13').checked) {
+                            a13 = document.getElementById('nq13').value;
+                        }
+                        else if (document.getElementById('dq13').checked) {
+                            a13 = document.getElementById('dq13').value;
+                        }
+                        else if (document.getElementById('sdq13').checked) {
+                            a13 = document.getElementById('sdq13').value;
+                        }
+                        else {
+                            a13 = " ";
+                        }
+                        return a13;
+                    }
+
+                    function fourteenQuestion() {
+                        if (document.getElementById('saq14').checked) {
+                            a14 = document.getElementById('saq14').value;
+                        }
+                        else if (document.getElementById('aq14').checked) {
+                            a14 = document.getElementById('aq14').value;
+                        }
+                        else if (document.getElementById('nq14').checked) {
+                            a14 = document.getElementById('nq14').value;
+                        }
+                        else if (document.getElementById('dq14').checked) {
+                            a14 = document.getElementById('dq14').value;
+                        }
+                        else if (document.getElementById('sdq14').checked) {
+                            a14 = document.getElementById('sdq14').value;
+                        }
+                        else {
+                            a14 = " ";
+                        }
+                        return a14;
+                    }
+
+                    function fifteenQuestion() {
+                        if (document.getElementById('saq15').checked) {
+                            a15 = document.getElementById('saq15').value;
+                        }
+                        else if (document.getElementById('aq15').checked) {
+                            a15 = document.getElementById('aq15').value;
+                        }
+                        else if (document.getElementById('nq15').checked) {
+                            a15 = document.getElementById('nq15').value;
+                        }
+                        else if (document.getElementById('dq15').checked) {
+                            a15 = document.getElementById('dq15').value;
+                        }
+                        else if (document.getElementById('sdq15').checked) {
+                            a15 = document.getElementById('sdq15').value;
+                        }
+                        else {
+                            a15 = " ";
+                        }
+                        return a15;
+                    }
+
+                    function sixteenQuestion() {
+                        if (document.getElementById('saq16').checked) {
+                            a16 = document.getElementById('saq16').value;
+                        }
+                        else if (document.getElementById('aq16').checked) {
+                            a16 = document.getElementById('aq16').value;
+                        }
+                        else if (document.getElementById('nq16').checked) {
+                            a16 = document.getElementById('nq16').value;
+                        }
+                        else if (document.getElementById('dq16').checked) {
+                            a16 = document.getElementById('dq16').value;
+                        }
+                        else if (document.getElementById('sdq16').checked) {
+                            a16 = document.getElementById('sdq16').value;
+                        }
+                        else {
+                            a16 = " ";
+                        }
+                        return a16;
+                    }
+
+                    function seventeenQuestion() {
+                        if (document.getElementById('saq17').checked) {
+                            a17 = document.getElementById('saq17').value;
+                        }
+                        else if (document.getElementById('aq17').checked) {
+                            a17 = document.getElementById('aq17').value;
+                        }
+                        else if (document.getElementById('nq17').checked) {
+                            a17 = document.getElementById('nq17').value;
+                        }
+                        else if (document.getElementById('dq17').checked) {
+                            a17 = document.getElementById('dq17').value;
+                        }
+                        else if (document.getElementById('sdq17').checked) {
+                            a17 = document.getElementById('sdq17').value;
+                        }
+                        else {
+                            a17 = " ";
+                        }
+                        return a17;
+                    }
+
+                    function eighteenQuestion() {
+                        if (document.getElementById('saq18').checked) {
+                            a18 = document.getElementById('saq18').value;
+                        }
+                        else if (document.getElementById('aq18').checked) {
+                            a18 = document.getElementById('aq18').value;
+                        }
+                        else if (document.getElementById('nq18').checked) {
+                            a18 = document.getElementById('nq18').value;
+                        }
+                        else if (document.getElementById('dq18').checked) {
+                            a18 = document.getElementById('dq18').value;
+                        }
+                        else if (document.getElementById('sdq18').checked) {
+                            a18 = document.getElementById('sdq18').value;
+                        }
+                        else {
+                            a18 = " ";
+                        }
+                        return a18;
+                    }
+
+                    function nineteenQuestion() {
+                        if (document.getElementById('saq19').checked) {
+                            a19 = document.getElementById('saq19').value;
+                        }
+                        else if (document.getElementById('aq19').checked) {
+                            a19 = document.getElementById('aq19').value;
+                        }
+                        else if (document.getElementById('nq19').checked) {
+                            a19 = document.getElementById('nq19').value;
+                        }
+                        else if (document.getElementById('dq19').checked) {
+                            a19 = document.getElementById('dq19').value;
+                        }
+                        else if (document.getElementById('sdq19').checked) {
+                            a19 = document.getElementById('sdq19').value;
+                        }
+                        else {
+                            a19 = " ";
+                        }
+                        return a19;
+                    }
+                    function twentyQuestion() {
+                        if (document.getElementById('na20').checked) {
+                            a20 = document.getElementById('na20').value;
+                        }
+                        else if (document.getElementById('saq20').checked) {
+                            a20 = document.getElementById('saq20').value;
+                        }
+                        else if (document.getElementById('aq20').checked) {
+                            a20 = document.getElementById('aq20').value;
+                        }
+                        else if (document.getElementById('nq20').checked) {
+                            a20 = document.getElementById('nq20').value;
+                        }
+                        else if (document.getElementById('dq20').checked) {
+                            a20 = document.getElementById('dq20').value;
+                        }
+                        else if (document.getElementById('sdq20').checked) {
+                            a20 = document.getElementById('sdq20').value;
+                        }
+                        else {
+                            a20 = " ";
+                        }
+                        return a20;
+                    }
+
+                    function twentyoneQuestion() {
+                        if (document.getElementById('na21').checked) {
+                            a21 = document.getElementById('na21').value;
+                        }
+                        else if (document.getElementById('saq21').checked) {
+                            a21 = document.getElementById('saq21').value;
+                        }
+                        else if (document.getElementById('aq21').checked) {
+                            a21 = document.getElementById('aq21').value;
+                        }
+                        else if (document.getElementById('nq21').checked) {
+                            a21 = document.getElementById('nq21').value;
+                        }
+                        else if (document.getElementById('dq21').checked) {
+                            a21 = document.getElementById('dq21').value;
+                        }
+                        else if (document.getElementById('sdq21').checked) {
+                            a21 = document.getElementById('sdq21').value;
+                        }
+                        else {
+                            a21 = " ";
+                        }
+                        return a21;
+                    }
+
+                    function twentytwoQuestion() {
+                        if (document.getElementById('saq22').checked) {
+                            a22 = document.getElementById('saq22').value;
+                        }
+                        else if (document.getElementById('aq22').checked) {
+                            a22 = document.getElementById('aq22').value;
+                        }
+                        else if (document.getElementById('nq22').checked) {
+                            a22 = document.getElementById('nq22').value;
+                        }
+                        else if (document.getElementById('dq22').checked) {
+                            a22 = document.getElementById('dq22').value;
+                        }
+                        else if (document.getElementById('sdq22').checked) {
+                            a22 = document.getElementById('sdq22').value;
+                        }
+                        else {
+                            a22 = " ";
+                        }
+                        return a22;
+                    }
+
+                    function twentythreeQuestion() {
+                        if (document.getElementById('saq23').checked) {
+                            a23 = document.getElementById('saq23').value;
+                        }
+                        else if (document.getElementById('aq23').checked) {
+                            a23 = document.getElementById('aq23').value;
+                        }
+                        else if (document.getElementById('nq23').checked) {
+                            a23 = document.getElementById('nq23').value;
+                        }
+                        else if (document.getElementById('dq23').checked) {
+                            a23 = document.getElementById('dq23').value;
+                        }
+                        else if (document.getElementById('sdq23').checked) {
+                            a23 = document.getElementById('sdq23').value;
+                        }
+                        else {
+                            a23 = " ";
+                        }
+                        return a23;
+                    }
+
+                    function twentyfourQuestion() {
+                        if (document.getElementById('saq24').checked) {
+                            a24 = document.getElementById('saq24').value;
+                        }
+                        else if (document.getElementById('aq24').checked) {
+                            a24 = document.getElementById('aq24').value;
+                        }
+                        else if (document.getElementById('nq24').checked) {
+                            a24 = document.getElementById('nq24').value;
+                        }
+                        else if (document.getElementById('dq24').checked) {
+                            a24 = document.getElementById('dq24').value;
+                        }
+                        else if (document.getElementById('sdq24').checked) {
+                            a24 = document.getElementById('sdq24').value;
+                        }
+                        else {
+                            a24 = " ";
+                        }
+                        return a24;
+                    }
+
+                    function twentyfiveQuestion() {
+                        if (document.getElementById('saq25').checked) {
+                            a25 = document.getElementById('saq25').value;
+                        }
+                        else if (document.getElementById('aq25').checked) {
+                            a25 = document.getElementById('aq25').value;
+                        }
+                        else if (document.getElementById('nq25').checked) {
+                            a25 = document.getElementById('nq25').value;
+                        }
+                        else if (document.getElementById('dq25').checked) {
+                            a25 = document.getElementById('dq25').value;
+                        }
+                        else if (document.getElementById('sdq25').checked) {
+                            a25 = document.getElementById('sdq25').value;
+                        }
+                        else {
+                            a25 = " ";
+                        }
+                        return a25;
+                    }
+
+                </script>
+
+
+                <!-- <button onclick="firstQuestion()" class="btn btn-secondary">View Results</button>  -->
+                <!--<button onclick="combineQuestions()" class="btn btn-secondary">View Results</button> -->
+                <button type="button" class="btn btn-success" id="submit" onclick="combineQuestions()">Submit</button>
+
+
+
+
+
+
+
+                </form>
+
+            </div>
+
+        </div>
+        <div class="col-sm-3">
+
+        </div>
+
+    </div>
+    </br>
+</body>

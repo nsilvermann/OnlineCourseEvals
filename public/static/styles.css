@@ -1,0 +1,25 @@
+.container {
+    text-align: left;
+}
+.navbar-custom
+{
+    background-color: #2E2E2E;
+    
+}
+
+.navbar-custom .navbar-text
+{
+    color: whitesmoke;
+}
+
+#footer
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2.5rem;
+}
+
+.container{
+    
+}
